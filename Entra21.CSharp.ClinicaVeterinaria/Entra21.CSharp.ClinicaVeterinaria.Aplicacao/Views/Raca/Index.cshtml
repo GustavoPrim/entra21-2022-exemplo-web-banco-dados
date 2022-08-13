@@ -14,15 +14,14 @@
     </thead>
     <tbody>
         <!-- Lugar dos registros da tabela -->
-        <tr>
-            <td>1</td> <!-- Coluna específica para body -->
-            <td>Pinscher</td> <!-- Coluna específica para body -->
-            <td>Cachorro</td> <!-- Coluna específica para body -->
-        </tr>
-        <tr>
-            <td>2</td> <!-- Coluna específica para body -->
-            <td>Frajola</td> <!-- Coluna específica para body -->
-            <td>Gato</td> <!-- Coluna específica para body -->
-        </tr>
+        @foreach (var raca in ViewBag.Racas)
+        {
+            <tr>
+                <!-- Linha -->
+                <td>@raca.Id</td> <!-- Coluna específica para o body-->
+                <td>@raca.Nome</td> <!-- Coluna específica para o body-->
+                <td>@raca.Especie</td> <!-- Coluna específica para o body-->
+            </tr>
+        }
     </tbody>
 </table>
