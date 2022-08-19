@@ -13,7 +13,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Entra21.CSharp.ClinicaVeterinaria.Servico\Entra21.CSharp.ClinicaVeterinaria.Servico.csproj" />
-    <ProjectReference Include="..\Repositorio\Repositorio.csproj" />
   </ItemGroup>
 
 </Project>
